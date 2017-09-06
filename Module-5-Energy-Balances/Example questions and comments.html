@@ -200,12 +200,49 @@ mole fractions for nitrogen</li>
 </div></div>
 <div class="section" id="Step-4---For-a-closed-constant--volume-system,-construct-a-table-with-columns-for-initial-and-final-amounts-of-each-species-(-or-)-and-specific-internal-energies-relative-to-the-chosen-reference-states.-For-an-open-system,-construct-a-table-with-columns-for-inlet-and-outlet-stream-component-flow-rates-(-or-)-and-specific-enthalpies-relative-to-the-chosen-reference-states.">
 <h2>Step 4 - For a closed constant- volume system, construct a table with columns for initial and final amounts of each species (<span class="math">\(m_i\)</span> or <span class="math">\(n_i\)</span>) and specific internal energies relative to the chosen reference states. For an open system, construct a table with columns for inlet and outlet stream component flow rates (<span class="math">\(\dot{m_i}\)</span> or <span class="math">\(\dot{n_i}\)</span>) and specific enthalpies relative to the chosen reference states.<a class="headerlink" href="#Step-4---For-a-closed-constant--volume-system,-construct-a-table-with-columns-for-initial-and-final-amounts-of-each-species-(-or-)-and-specific-internal-energies-relative-to-the-chosen-reference-states.-For-an-open-system,-construct-a-table-with-columns-for-inlet-and-outlet-stream-component-flow-rates-(-or-)-and-specific-enthalpies-relative-to-the-chosen-reference-states." title="Permalink to this headline">¶</a></h2>
-<p>| Substance | <span class="math">\(n_{in}\)</span> | <span class="math">\(\hat{H_{in}}\)</span> |
-<span class="math">\(n_{out}\)</span> | <span class="math">\(\hat{H_{out}}\)</span> | | &#8212;&#8212;&#8212;&#8212;-
-|:&#8212;&#8212;&#8212;&#8212;-| &#8212;&#8211;|&#8212;&#8211;|&#8212;&#8211;| | H2O(v) | 0.669 |
-<span class="math">\(\hat{H_{1}}\)</span> |3.35|<span class="math">\(\hat{H_{3}}\)</span>| | H2O(l) | - |
-- |63.55|| | N2(v) | 0.331 | <span class="math">\(\hat{H_{2}}\)</span>
-|33.1|<span class="math">\(\hat{H_{4}}\)</span>||</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="18%" />
+<col width="24%" />
+<col width="19%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Substance</th>
+<th class="head"><span class="math">\(n_{in}\)</span></th>
+<th class="head"><span class="math">\(\hat{H_{in}}\)</span></th>
+<th class="head"><span class="math">\(n_{out}\)</span></th>
+<th class="head"><span class="math">\(\hat{H_{out}}\)</span></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>H2O(v)</td>
+<td>0.669</td>
+<td><span class="math">\(\hat{H_{1}}\)</span></td>
+<td>3.35</td>
+<td><span class="math">\(\hat{H_{3}}\)</span></td>
+</tr>
+<tr class="row-odd"><td>H2O(l)</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>63.55</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>N2(v)</td>
+<td>0.331</td>
+<td><span class="math">\(\hat{H_{2}}\)</span></td>
+<td>33.1</td>
+<td><span class="math">\(\hat{H_{4}}\)</span></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="Step-5---Calculate-all-required-values-of--(or--)-and-insert-the-values-in-the-appropriate-places-in-the-table.">
 <h2>Step 5 - Calculate all required values of <span class="math">\(\hat{U}\)</span> (or <span class="math">\(\hat{H}\)</span> ) and insert the values in the appropriate places in the table.<a class="headerlink" href="#Step-5---Calculate-all-required-values-of--(or--)-and-insert-the-values-in-the-appropriate-places-in-the-table." title="Permalink to this headline">¶</a></h2>
@@ -285,23 +322,8 @@ the system that is increasing or the surroundings?</li>
         text-align: center;
         font-weight: bold;
         position: fixed;
-        bottom: 5%;
-        right: 5%;
-        display: none;
-    }
-    .sphinxsidebarwrapper{
-        /*position: fixed;*/
-        overflow: hidden;
-        max-width: 240px;
-        height: 1000px;
-    }
-    .tocHover:hover {
-        color:#004B6B;
-    }
-    .toctree-wrapper h1{
-        font-size: 36px;
-    }
-    .headerlink{
+        bottom: 60px;
+        right: 40px;
         display: none;
     }
 </style>
@@ -309,27 +331,14 @@ the system that is increasing or the surroundings?</li>
 <script type="text/javascript">
 $(document).ready(function() {
     //Check to see if the window is top if not then display button
-    // $('.sphinxsidebarwrapper').addClass("scrollWith");
-
-
-
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
             $('.scrollToTop').fadeIn();
-        } 
-        else {
+        } else {
             $('.scrollToTop').fadeOut();
         }
-        // if ($(this).scrollTop()>500) {
-        //     $('.sphinxsidebarwrapper').fadeOut();
-        // }
-        // else{
-        //     $('.sphinxsidebarwrapper').show();
-        // }
-    }); 
-    // $('.sphinxsidebarwrapper').hover(function(){
-        // $(this).fadeIn();
-    // });
+    });
+
     //Click event to scroll to top
     $('.scrollToTop').click(function() {
         $('html, body').animate({
@@ -337,11 +346,35 @@ $(document).ready(function() {
         }, 500);
         return false;
     });
-
-    $('a:contains("Table Of Contents")').addClass('tocHover');
-
-
 });
+</script>
+
+<!-- Google analytics -->
+
+    <div class="footer">
+      &copy;2017, I2.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/Module-5-Energy-Balances/Example questions and comments.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106029945-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 
   </body>

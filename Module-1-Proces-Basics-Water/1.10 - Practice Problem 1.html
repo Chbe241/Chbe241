@@ -237,7 +237,7 @@ exits the tank in a separate stream.</p>
 <h3>a) Draw and label a block flow diagram (BFD)<a class="headerlink" href="#a)-Draw-and-label-a-block-flow-diagram-(BFD)" title="Permalink to this headline">¶</a></h3>
 <p>First, let&#8217;s draw the basic layout of the BFD:</p>
 <div class="figure">
-<img alt="" src="Module-1-Proces-Basics-Water/../figures/Module-1/Sedimentation-2.png" />
+<img alt="" src="../_images/Sedimentation-2.png" />
 </div>
 <p>Attribution: Said Zaid-Alkailani &amp; UBC [CC BY 4.0 de
 (<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)]</p>
@@ -252,7 +252,7 @@ can.</p>
 <div class="math">
 \[x_{(4, \space Particulate)} = 0.40\]</div>
 <div class="figure">
-<img alt="" src="Module-1-Proces-Basics-Water/../figures/Module-1/Sedimentation-3.png" />
+<img alt="" src="../_images/Sedimentation-3.png" />
 </div>
 <p>Attribution: Said Zaid-Alkailani &amp; UBC [CC BY 4.0 de
 (<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)]</p>
@@ -339,7 +339,7 @@ unknowns.</p>
 <p>Now that we have completely solved the material balance, we can complete
 our BFD:</p>
 <div class="figure">
-<img alt="" src="Module-1-Proces-Basics-Water/../figures/Module-1/Sedimentation-4.png" />
+<img alt="" src="../_images/Sedimentation-4.png" />
 </div>
 <p>Attribution: Said Zaid-Alkailani &amp; UBC [CC BY 4.0 de
 (<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)]</p>
@@ -417,23 +417,8 @@ our BFD:</p>
         text-align: center;
         font-weight: bold;
         position: fixed;
-        bottom: 5%;
-        right: 5%;
-        display: none;
-    }
-    .sphinxsidebarwrapper{
-        /*position: fixed;*/
-        overflow: hidden;
-        max-width: 240px;
-        height: 1000px;
-    }
-    .tocHover:hover {
-        color:#004B6B;
-    }
-    .toctree-wrapper h1{
-        font-size: 36px;
-    }
-    .headerlink{
+        bottom: 60px;
+        right: 40px;
         display: none;
     }
 </style>
@@ -441,27 +426,14 @@ our BFD:</p>
 <script type="text/javascript">
 $(document).ready(function() {
     //Check to see if the window is top if not then display button
-    // $('.sphinxsidebarwrapper').addClass("scrollWith");
-
-
-
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
             $('.scrollToTop').fadeIn();
-        } 
-        else {
+        } else {
             $('.scrollToTop').fadeOut();
         }
-        // if ($(this).scrollTop()>500) {
-        //     $('.sphinxsidebarwrapper').fadeOut();
-        // }
-        // else{
-        //     $('.sphinxsidebarwrapper').show();
-        // }
-    }); 
-    // $('.sphinxsidebarwrapper').hover(function(){
-        // $(this).fadeIn();
-    // });
+    });
+
     //Click event to scroll to top
     $('.scrollToTop').click(function() {
         $('html, body').animate({
@@ -469,11 +441,35 @@ $(document).ready(function() {
         }, 500);
         return false;
     });
-
-    $('a:contains("Table Of Contents")').addClass('tocHover');
-
-
 });
+</script>
+
+<!-- Google analytics -->
+
+    <div class="footer">
+      &copy;2017, I2.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/Module-1-Proces-Basics-Water/1.10 - Practice Problem 1.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106029945-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 
   </body>

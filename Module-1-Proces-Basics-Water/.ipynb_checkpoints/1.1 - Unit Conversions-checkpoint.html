@@ -244,7 +244,7 @@ are your conversion factors?</p>
 <span></span>In [1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<div class="input_area highlight-ipython2"><div class="highlight"><pre>
 <span></span>water_use = 342 # gallons/day
 
 seconds_per_day = 86400 # s/day
@@ -278,37 +278,16 @@ The average house uses 14.983914583333332 cm^3/s
 <p>Written out, this would look like:</p>
 <div class="math">
 \[\frac{342 \space gallons }{1\space day} \cdot  \frac{1\space day}{86400s} \cdot \frac{3.78541 litre}{1 gallon} \cdot \frac{0.001 m^3}{1 litre} \cdot \frac{1,000,000 cm^3}{1 m^3} =  14.983914583 \frac { cm^3}{s}\]</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython2"><div class="highlight"><pre>
+<span></span>
+</pre></div>
 </div>
 </div>
-<div class="section" id="1.1.5-–-Problem-statement">
-<h2>1.1.5 – Problem statement<a class="headerlink" href="#1.1.5-–-Problem-statement" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Question">
-<h3>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h3>
-<p>Despite the odds, the Kinger-Sporgan pipeline is being built to no
-environmental impact, which will soon supply BC and Washington state
-with 40,001 barrels of oil biweekly (including weekends). As an employee
-of Dusty Oil in Vancouver, you keep in contact with your colleagues in
-the United States and update them on the amount of oil being supplied.
-Since they use metric and you use the imperial system, what is the
-amount of oil transported, in metric?</p>
-<p><strong>Note</strong>: Use 1 oil barrel = 35 imperial gallons. Not US gallons.</p>
-<p>According to the back of our text,</p>
-<div class="math">
-\[1000 \space L = 220.83 \space \text{imperial gallons}\]</div>
-<p>Let&#8217;s find out how many litres are in an imperial gallon first:</p>
-<div class="math">
-\[1000 \space L \space \div \space 220.83 \space \text{imperial gallons} = 4.5283 \space \frac{L}{\text{imperial gallons}}\]</div>
-<p>Now we know that biweekly, the total amount of oil transported is:</p>
-<div class="math">
-\[40,001 \space barrels \space \times \space 35 \space 35 \space \frac{\text{imperial gallons}}{barrels} \times \space 4.5283 \space \frac{L}{\text{imperial gallons}} = 6339778 \space litres\]</div>
-<p>Let&#8217;s find how how many litres are transported in seconds. Since I don&#8217;t
-know how many seconds are in a fortnight off the top of my head:</p>
-<div class="math">
-\[14 \space days \space \times \space 24 \space \frac{hours}{day} \space \times \space 3600 \space \frac{seconds}{hour} = 1209600 \space seconds\]</div>
-<p>Finally, you can report that the total amount of oil transported, in
-metric units, is:</p>
-<div class="math">
-\[6339778 \space litres \div 1209600 \space seconds = 5.241 \space \frac{L}{s}\]</div>
 </div>
 </div>
 </div>
@@ -327,10 +306,6 @@ metric units, is:</p>
 <li><a class="reference internal" href="#1.1.4-–-Problem-Statement">1.1.4 – Problem Statement</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
 <li><a class="reference internal" href="#Answer">Answer</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#1.1.5-–-Problem-statement">1.1.5 – Problem statement</a><ul>
-<li><a class="reference internal" href="#Question">Question</a></li>
 </ul>
 </li>
 </ul>
@@ -369,23 +344,8 @@ metric units, is:</p>
         text-align: center;
         font-weight: bold;
         position: fixed;
-        bottom: 5%;
-        right: 5%;
-        display: none;
-    }
-    .sphinxsidebarwrapper{
-        /*position: fixed;*/
-        overflow: hidden;
-        max-width: 240px;
-        height: 1000px;
-    }
-    .tocHover:hover {
-        color:#004B6B;
-    }
-    .toctree-wrapper h1{
-        font-size: 36px;
-    }
-    .headerlink{
+        bottom: 60px;
+        right: 40px;
         display: none;
     }
 </style>
@@ -393,27 +353,14 @@ metric units, is:</p>
 <script type="text/javascript">
 $(document).ready(function() {
     //Check to see if the window is top if not then display button
-    // $('.sphinxsidebarwrapper').addClass("scrollWith");
-
-
-
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
             $('.scrollToTop').fadeIn();
-        } 
-        else {
+        } else {
             $('.scrollToTop').fadeOut();
         }
-        // if ($(this).scrollTop()>500) {
-        //     $('.sphinxsidebarwrapper').fadeOut();
-        // }
-        // else{
-        //     $('.sphinxsidebarwrapper').show();
-        // }
-    }); 
-    // $('.sphinxsidebarwrapper').hover(function(){
-        // $(this).fadeIn();
-    // });
+    });
+
     //Click event to scroll to top
     $('.scrollToTop').click(function() {
         $('html, body').animate({
@@ -421,11 +368,35 @@ $(document).ready(function() {
         }, 500);
         return false;
     });
-
-    $('a:contains("Table Of Contents")').addClass('tocHover');
-
-
 });
+</script>
+
+<!-- Google analytics -->
+
+    <div class="footer">
+      &copy;2017, I2.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../../_sources/Module-1-Proces-Basics-Water/.ipynb_checkpoints/1.1 - Unit Conversions-checkpoint.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106029945-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 
   </body>

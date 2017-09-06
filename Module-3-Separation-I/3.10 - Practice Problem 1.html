@@ -225,7 +225,7 @@ which unit should be solved first.</li>
 <div class="section" id="a)-Draw-and-label-a-flowchart-of-the-entire-process.">
 <h3>a) Draw and label a flowchart of the entire process.<a class="headerlink" href="#a)-Draw-and-label-a-flowchart-of-the-entire-process." title="Permalink to this headline">¶</a></h3>
 <div class="figure">
-<img alt="" src="Module-3-Separation-I/../figures/Module-3/Q33_1.png" />
+<img alt="" src="../_images/Q33_1.png" />
 </div>
 </div>
 <div class="section" id="b)-Perform-a-degree-of-analysis-on-each-unit-operation-and-determine-which-unit-should-be-solved-first.">
@@ -312,7 +312,7 @@ the separator.</p>
 \[x_{(6, \space w)} = 1 - x_{(6, \space Cr)} = 1 - 0.0154 = 0.9846\]</div>
 <p>Finally, we can complete the flowchart.</p>
 <div class="figure">
-<img alt="" src="Module-3-Separation-I/../figures/Module-3/Q33_2.png" />
+<img alt="" src="../_images/Q33_2.png" />
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none"><div class="highlight"><pre>
@@ -379,23 +379,8 @@ the separator.</p>
         text-align: center;
         font-weight: bold;
         position: fixed;
-        bottom: 5%;
-        right: 5%;
-        display: none;
-    }
-    .sphinxsidebarwrapper{
-        /*position: fixed;*/
-        overflow: hidden;
-        max-width: 240px;
-        height: 1000px;
-    }
-    .tocHover:hover {
-        color:#004B6B;
-    }
-    .toctree-wrapper h1{
-        font-size: 36px;
-    }
-    .headerlink{
+        bottom: 60px;
+        right: 40px;
         display: none;
     }
 </style>
@@ -403,27 +388,14 @@ the separator.</p>
 <script type="text/javascript">
 $(document).ready(function() {
     //Check to see if the window is top if not then display button
-    // $('.sphinxsidebarwrapper').addClass("scrollWith");
-
-
-
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
             $('.scrollToTop').fadeIn();
-        } 
-        else {
+        } else {
             $('.scrollToTop').fadeOut();
         }
-        // if ($(this).scrollTop()>500) {
-        //     $('.sphinxsidebarwrapper').fadeOut();
-        // }
-        // else{
-        //     $('.sphinxsidebarwrapper').show();
-        // }
-    }); 
-    // $('.sphinxsidebarwrapper').hover(function(){
-        // $(this).fadeIn();
-    // });
+    });
+
     //Click event to scroll to top
     $('.scrollToTop').click(function() {
         $('html, body').animate({
@@ -431,11 +403,35 @@ $(document).ready(function() {
         }, 500);
         return false;
     });
-
-    $('a:contains("Table Of Contents")').addClass('tocHover');
-
-
 });
+</script>
+
+<!-- Google analytics -->
+
+    <div class="footer">
+      &copy;2017, I2.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/Module-3-Separation-I/3.10 - Practice Problem 1.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106029945-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 
   </body>

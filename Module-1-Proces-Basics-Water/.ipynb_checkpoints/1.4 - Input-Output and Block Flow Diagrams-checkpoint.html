@@ -222,7 +222,7 @@ diagram.</li>
 <p><strong>Input-output diagrams</strong> are the simplest form of flow diagrams. The
 diagram consists of input arrows, one block for the complete process,
 and output arrows. For example:</p>
-<p><img alt="input-output-diagrams" src="Module-1-Proces-Basics-Water/.ipynb_checkpoints/../figures/Module-1/Input-Output_Diagrams1.jpg" /> Attribution: Said Zaid-Alkailani &amp; UBC [CC BY
+<p><img alt="input-output-diagrams" src="Module-1-Proces-Basics-Water\.ipynb_checkpoints\../figures/Module-1/Input-Output_Diagrams.jpg" /> Attribution: Said Zaid-Alkailani &amp; UBC [CC BY
 4.0 de (<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)]</p>
 </div>
 <div class="section" id="1.4.4-–-Problem-Statement">
@@ -236,7 +236,7 @@ stream 4?</p>
 <div class="section" id="Answer">
 <h3>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h3>
 <p>First draw your BFD, in this case it will be an input-output diagram.
-<img alt="BFD-problem" src="Module-1-Proces-Basics-Water/.ipynb_checkpoints/../figures/Module-1/BFD_Problem1.png" /></p>
+<img alt="BFD-problem" src="Module-1-Proces-Basics-Water\.ipynb_checkpoints\../figures/Module-1/BFD_Problem.png" /></p>
 <p>Attribution: Said Zaid-Alkailani &amp; UBC [CC BY 4.0 de
 (<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)]</p>
 <p>Then write the mass balance and solve.</p>
@@ -310,23 +310,8 @@ stream 4?</p>
         text-align: center;
         font-weight: bold;
         position: fixed;
-        bottom: 5%;
-        right: 5%;
-        display: none;
-    }
-    .sphinxsidebarwrapper{
-        /*position: fixed;*/
-        overflow: hidden;
-        max-width: 240px;
-        height: 1000px;
-    }
-    .tocHover:hover {
-        color:#004B6B;
-    }
-    .toctree-wrapper h1{
-        font-size: 36px;
-    }
-    .headerlink{
+        bottom: 60px;
+        right: 40px;
         display: none;
     }
 </style>
@@ -334,27 +319,14 @@ stream 4?</p>
 <script type="text/javascript">
 $(document).ready(function() {
     //Check to see if the window is top if not then display button
-    // $('.sphinxsidebarwrapper').addClass("scrollWith");
-
-
-
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
             $('.scrollToTop').fadeIn();
-        } 
-        else {
+        } else {
             $('.scrollToTop').fadeOut();
         }
-        // if ($(this).scrollTop()>500) {
-        //     $('.sphinxsidebarwrapper').fadeOut();
-        // }
-        // else{
-        //     $('.sphinxsidebarwrapper').show();
-        // }
-    }); 
-    // $('.sphinxsidebarwrapper').hover(function(){
-        // $(this).fadeIn();
-    // });
+    });
+
     //Click event to scroll to top
     $('.scrollToTop').click(function() {
         $('html, body').animate({
@@ -362,11 +334,35 @@ $(document).ready(function() {
         }, 500);
         return false;
     });
-
-    $('a:contains("Table Of Contents")').addClass('tocHover');
-
-
 });
+</script>
+
+<!-- Google analytics -->
+
+    <div class="footer">
+      &copy;2017, I2.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../../_sources/Module-1-Proces-Basics-Water/.ipynb_checkpoints/1.4 - Input-Output and Block Flow Diagrams-checkpoint.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106029945-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 
   </body>
