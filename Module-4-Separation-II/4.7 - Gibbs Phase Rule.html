@@ -215,6 +215,15 @@ div.nboutput div.output_area.stderr {
 <li>Calculate the degree of freedom of a system.</li>
 </ol>
 </div>
+<hr class="docutils" />
+<div class="section" id="4.7.1-–-Introduction">
+<h2>4.7.1 – Introduction<a class="headerlink" href="#4.7.1-–-Introduction" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>Gibbs Phase Rule</strong> is used when trying to find the degrees of
+freedom of a system at equilibrium. Degrees of freedom is the number of
+intensive variables you need to describe to allow the system to be
+solved.</p>
+</div>
+<hr class="docutils" />
 <div class="section" id="4.7.2-–-Equation">
 <h2>4.7.2 – Equation<a class="headerlink" href="#4.7.2-–-Equation" title="Permalink to this headline">¶</a></h2>
 <p>The Gibbs Phase Rule equation is:</p>
@@ -228,6 +237,48 @@ div.nboutput div.output_area.stderr {
 <div class="math">
 \[\Pi = \text{number of phases in a system at equilibrium}\]</div>
 </div>
+<hr class="docutils" />
+<div class="section" id="4.7.3-–-Examples">
+<h2>4.7.3 – Examples<a class="headerlink" href="#4.7.3-–-Examples" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Pure Liquid water: Pure liquid water is one phase and one chemical
+species. The degrees of freedom by Gibbs Phase Rule is:</p>
+<div class="math">
+\[DF = 2 + 1 - 1 = 2\]</div>
+<p>Since pure liquid water exists over a multitude of pressures and
+temperature we need to specify a specific pressure and temperature at
+which this equilibrium exists. This is what the degrees of freedom
+represent. The degrees of freedom can also be thought of as how many
+dimensions the liquid water exists in a phase diagram. In this case
+it would be two dimensional.</p>
+<div class="math">
+\[\]</div>
+</li>
+<li><p class="first">A mixture of ice, liquid water, and steam: A mixture of ice, liquid
+water, and steam is three phases and one chemical species. The
+degrees of freedom by Gibbs Phase Rule is:</p>
+<div class="math">
+\[DF = 2 + 1 - 3 = 0\]</div>
+<p>Since ice, liquid water, and steam exists at one point of a phase
+diagram, we don&#8217;t need to specify anything because it only exists at
+one temperature and pressure. In this case it will be zero
+dimensional.</p>
+<div class="math">
+\[\]</div>
+</li>
+<li><p class="first">A Vapour-Liquid Equilibrium of acetone and methyl ethyl ketone: A
+Vapour-Liquid Equilibrium of acetone and methyl ethyl ketone has two
+phases and two chemical species. The degrees of freedom by Gibbs
+Phase Rule is:</p>
+<div class="math">
+\[DF = 2 + 2 - 2 = 2\]</div>
+<p>Since a vapour liquid equilibrium can exist over a multitude of
+pressures and temperature we need to specify a specific pressure and
+temperature at which this equilibrium exists.</p>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
 <div class="section" id="4.7.4-–-Problem-Statement">
 <h2>4.7.4 – Problem Statement<a class="headerlink" href="#4.7.4-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="Question">
@@ -267,7 +318,9 @@ contains, air, water and chlorine in two phases, the DF is:</p>
   <ul>
 <li><a class="reference internal" href="#">4.7 – Gibbs Phase Rule</a><ul>
 <li><a class="reference internal" href="#4.7.0-–-Learning-Objectives">4.7.0 – Learning Objectives</a></li>
+<li><a class="reference internal" href="#4.7.1-–-Introduction">4.7.1 – Introduction</a></li>
 <li><a class="reference internal" href="#4.7.2-–-Equation">4.7.2 – Equation</a></li>
+<li><a class="reference internal" href="#4.7.3-–-Examples">4.7.3 – Examples</a></li>
 <li><a class="reference internal" href="#4.7.4-–-Problem-Statement">4.7.4 – Problem Statement</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
 </ul>
@@ -333,34 +386,6 @@ $(document).ready(function() {
         return false;
     });
 });
-</script>
-
-<!-- Google analytics -->
-
-    <div class="footer">
-      &copy;2017, I2.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="../_sources/Module-4-Separation-II/4.7 - Gibbs Phase Rule.ipynb.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-106029945-1', 'auto');
-  ga('send', 'pageview');
-
 </script>
 
   </body>

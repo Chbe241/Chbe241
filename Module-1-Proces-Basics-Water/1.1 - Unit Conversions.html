@@ -216,6 +216,17 @@ div.nboutput div.output_area.stderr {
 <li>Convert a unit from one to the other.</li>
 </ol>
 </div>
+<hr class="docutils" />
+<div class="section" id="1.1.1-–-Introduction">
+<h2>1.1.1 – Introduction<a class="headerlink" href="#1.1.1-–-Introduction" title="Permalink to this headline">¶</a></h2>
+<p>Knowing how to <strong>convert units</strong> is vital to engineers. Improperly
+converted units could mean the difference between life and death. With
+Canada&#8217;s proximity to the USA, it is very important to learn how to
+convert from imperial to metric and vise versa. It is also important to
+know how to convert from one unit to another in the same system such as
+<span class="math">\(m^3\)</span> to <span class="math">\(l\)</span>.</p>
+</div>
+<hr class="docutils" />
 <div class="section" id="1.1.2-–-Conversion-Factors">
 <h2>1.1.2 – Conversion Factors<a class="headerlink" href="#1.1.2-–-Conversion-Factors" title="Permalink to this headline">¶</a></h2>
 <p><strong>Conversion factors</strong> are ratios between two expressions of the same
@@ -229,8 +240,39 @@ quantity. For an example:</p>
 <div class="math">
 \[\frac{1 m^3}{1,000,000,000 m m^3} \quad \text{(1 cubic meter per 1,000,000,000 cubic millimeters)}\]</div>
 </div>
-<div class="section" id="1.1.4-–-Problem-Statement">
-<h2>1.1.4 – Problem Statement<a class="headerlink" href="#1.1.4-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<div class="section" id="1.1.3-–-Converting-Units">
+<h2>1.1.3 – Converting Units<a class="headerlink" href="#1.1.3-–-Converting-Units" title="Permalink to this headline">¶</a></h2>
+<p>To convert a quantity from one unit to its equivalent of another unit,
+we will use conversion factors. For example, if we want to convert 7.2
+km to meters, we would write:</p>
+<div class="math">
+\[7.2 km \times \frac{1,000 m}{1 km} = 7,200 m\]</div>
+<p>As you can see, the original unit is km, the final unit is m, and the
+conversion factor is <span class="math">\(\frac{1,000m}{1km}\)</span>.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="1.1.4-–-Dimensional-Homogeneity">
+<h2>1.1.4 – Dimensional Homogeneity<a class="headerlink" href="#1.1.4-–-Dimensional-Homogeneity" title="Permalink to this headline">¶</a></h2>
+<p>Consider the equation</p>
+<div class="math">
+\[u = u_0 + gt\]</div>
+<p>where the corrisponding units are</p>
+<div class="math">
+\[[m/s] = [m/s] + [m/s^2] \times [s]\]</div>
+<p>Now lets inputed values for each of the varibles in the first equation.</p>
+<div class="math">
+\[45 \space \frac{m}{s} \neq 12 \space \frac{m}{s} + 9.81 \space \frac{m}{s^2} \cdot 3.36 \space min\]</div>
+<p>You may ask why <span class="math">\(45 \neq 45\)</span> and that is because the dimensions
+are not homogenous. The units are not consistent. The velocity and
+accelartation are measured in seconds, yet the time we used is minutes.
+To correct the formula, we must change the minutes to seconds.</p>
+<div class="math">
+\[45 \space \frac{m}{s} \neq 12 \space \frac{m}{s} + 9.81 \space \frac{m}{s^2} \cdot 3.36 \space s\]</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="1.1.5-–-Problem-Statement">
+<h2>1.1.5 – Problem Statement<a class="headerlink" href="#1.1.5-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="Problem-1">
 <h3>Problem 1<a class="headerlink" href="#Problem-1" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="Question">
@@ -339,8 +381,11 @@ metric units, is:</p>
   <ul>
 <li><a class="reference internal" href="#">1.1 – Unit Conversions</a><ul>
 <li><a class="reference internal" href="#1.1.0-–-Learning-Objectives">1.1.0 – Learning Objectives</a></li>
+<li><a class="reference internal" href="#1.1.1-–-Introduction">1.1.1 – Introduction</a></li>
 <li><a class="reference internal" href="#1.1.2-–-Conversion-Factors">1.1.2 – Conversion Factors</a></li>
-<li><a class="reference internal" href="#1.1.4-–-Problem-Statement">1.1.4 – Problem Statement</a><ul>
+<li><a class="reference internal" href="#1.1.3-–-Converting-Units">1.1.3 – Converting Units</a></li>
+<li><a class="reference internal" href="#1.1.4-–-Dimensional-Homogeneity">1.1.4 – Dimensional Homogeneity</a></li>
+<li><a class="reference internal" href="#1.1.5-–-Problem-Statement">1.1.5 – Problem Statement</a><ul>
 <li><a class="reference internal" href="#Problem-1">Problem 1</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
 <li><a class="reference internal" href="#Answer">Answer</a></li>
@@ -414,34 +459,6 @@ $(document).ready(function() {
         return false;
     });
 });
-</script>
-
-<!-- Google analytics -->
-
-    <div class="footer">
-      &copy;2017, I2.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="../_sources/Module-1-Proces-Basics-Water/1.1 - Unit Conversions.ipynb.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-106029945-1', 'auto');
-  ga('send', 'pageview');
-
 </script>
 
   </body>

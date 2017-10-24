@@ -216,6 +216,24 @@ div.nboutput div.output_area.stderr {
 <li>Find and use the compressibility factor.</li>
 </ol>
 </div>
+<hr class="docutils" />
+<div class="section" id="4.3.1-–-Introduction">
+<h2>4.3.1 – Introduction<a class="headerlink" href="#4.3.1-–-Introduction" title="Permalink to this headline">¶</a></h2>
+<p>Before this course, you most likely have used the <strong>ideal gas law</strong>,
+<span class="math">\(P V = n R T\)</span>, but this equation of state is not very accurate in
+describing gases in the real world. This is because the <strong>ideal gas
+law</strong> assumes that gas particles are infinitesimal points of mass and
+that these points of mass do not interact with each other. This is a
+flaw in the ideal gas law and causes the ideal gas law to be close to
+the truth only when pressures are relatively low or the gases are noble
+gases, especially Helium.</p>
+<p>That is why equations of state for <strong>non-ideal gases</strong> are crucial for
+calculating how <strong>real gases</strong>. In this section, we will focus on the
+<strong>compressibility factors</strong> to correct the ideal gas law and the <strong>viral
+equation</strong>, the <strong>Van der Walls equation</strong>, and the
+<strong>Soave-Redlich-Kwong equation</strong>.</p>
+</div>
+<hr class="docutils" />
 <div class="section" id="4.3.2-–-Equations-of-the-State-for-Non-Ideal-Gases">
 <h2>4.3.2 – Equations of the State for Non-Ideal Gases<a class="headerlink" href="#4.3.2-–-Equations-of-the-State-for-Non-Ideal-Gases" title="Permalink to this headline">¶</a></h2>
 <p><strong>Critical temperature</strong>, <span class="math">\(T_c\)</span>, and <strong>critical pressure</strong>,
@@ -292,6 +310,37 @@ is:</p>
 \[m = 0.48508 + 1.55171 \omega - 0.1561 \omega^2\]</div>
 </div>
 </div>
+<hr class="docutils" />
+<div class="section" id="4.3.3-–-Compressibility-Factor">
+<h2>4.3.3 – Compressibility Factor<a class="headerlink" href="#4.3.3-–-Compressibility-Factor" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>compressibility factor</strong> of a gas is defined as:</p>
+<div class="math">
+\[z = \frac{ P \hat{V} }{R T}\]</div>
+<p>When <span class="math">\(z = 1\)</span>, the gas behaves ideally. The amount <span class="math">\(z\)</span>
+differs from 1 is a measurement of how non-ideal the gas is.</p>
+<p>A method used to estimate <span class="math">\(z\)</span>, since every type of gas has
+different <span class="math">\(z\)</span> factors at the same pressure and temperature, is:</p>
+<ol class="arabic simple">
+<li>Look up the <strong>critical temperature</strong>, <span class="math">\(T_c\)</span>, and <strong>critical
+pressure</strong>, <span class="math">\(P_c\)</span>, of the species.</li>
+<li>Calculate the <strong>reduced temperature</strong>, <span class="math">\(T_r = \frac{T}{T_c}\)</span>
+and <strong>reduced pressure</strong>, <span class="math">\(P_r = \frac{P}{P_c}\)</span>.</li>
+<li>Look up the values of <span class="math">\(z\)</span> on a <strong>generalized compressibility
+chart</strong>, which plots <span class="math">\(z\)</span> versus <span class="math">\(P_r\)</span>.</li>
+</ol>
+<p>This method of estimating <span class="math">\(z\)</span> is the empirical <strong>law of
+corresponding states</strong>. The reduced temperature and pressure provide a
+measure of the gas&#8217;s proximity to its critical state. The closer
+<span class="math">\(T_r\)</span> and <span class="math">\(P_r\)</span> are to 1, the closer the gas is to its
+critical state. This suggests that a plot of <span class="math">\(z\)</span> verses
+<span class="math">\(T_r\)</span> and <span class="math">\(P_r\)</span> will be approximately the same for all
+substances. This type of plot is called a <a class="reference external" href="http://slideplayer.com/slide/4216345/14/images/17/Generalized+Compressibility+chart:.jpg">**generalized compressibility
+chart**</a>.</p>
+<p>Each line represents a different <span class="math">\(T_r\)</span> while <span class="math">\(P_r\)</span> is the
+x-axis. The y value of intersection between the <span class="math">\(T_r\)</span> and
+<span class="math">\(P_r\)</span> is the compressibility factor.</p>
+</div>
+<hr class="docutils" />
 <div class="section" id="4.3.4-–-Problem-Statement">
 <h2>4.3.4 – Problem Statement<a class="headerlink" href="#4.3.4-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="Question">
@@ -494,12 +543,14 @@ Engineering Design Library (ChEDL) <a class="reference external" href="https://g
   <ul>
 <li><a class="reference internal" href="#">4.3 – Non-Ideal Gas Laws</a><ul>
 <li><a class="reference internal" href="#4.3.0-–-Learning-Objectives">4.3.0 – Learning Objectives</a></li>
+<li><a class="reference internal" href="#4.3.1-–-Introduction">4.3.1 – Introduction</a></li>
 <li><a class="reference internal" href="#4.3.2-–-Equations-of-the-State-for-Non-Ideal-Gases">4.3.2 – Equations of the State for Non-Ideal Gases</a><ul>
 <li><a class="reference internal" href="#The-Viral-Equation-of-State">The Viral Equation of State</a></li>
 <li><a class="reference internal" href="#Van-der-Waals-Equation-of-State">Van der Waals Equation of State</a></li>
 <li><a class="reference internal" href="#Soave–Redlich–Kwong-Equation-of-State">Soave–Redlich–Kwong Equation of State</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#4.3.3-–-Compressibility-Factor">4.3.3 – Compressibility Factor</a></li>
 <li><a class="reference internal" href="#4.3.4-–-Problem-Statement">4.3.4 – Problem Statement</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
 <li><a class="reference internal" href="#Answer">Answer</a><ul>
@@ -572,34 +623,6 @@ $(document).ready(function() {
         return false;
     });
 });
-</script>
-
-<!-- Google analytics -->
-
-    <div class="footer">
-      &copy;2017, I2.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="../_sources/Module-4-Separation-II/4.3 - Non-Ideal Gas Laws.ipynb.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-106029945-1', 'auto');
-  ga('send', 'pageview');
-
 </script>
 
   </body>

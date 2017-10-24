@@ -216,6 +216,14 @@ div.nboutput div.output_area.stderr {
 <li>Interpolate between data points.</li>
 </ol>
 </div>
+<hr class="docutils" />
+<div class="section" id="4.6.1-–-Introduction">
+<h2>4.6.1 – Introduction<a class="headerlink" href="#4.6.1-–-Introduction" title="Permalink to this headline">¶</a></h2>
+<p>Water, and in specific, steam is used in many processes. Most commonly,
+it is used in the transfer of energy. Because of this, scientist and
+engineers have created extensive data tables on a variety of conditions.</p>
+</div>
+<hr class="docutils" />
 <div class="section" id="4.6.2-–-Table-Description">
 <h2>4.6.2 – Table Description<a class="headerlink" href="#4.6.2-–-Table-Description" title="Permalink to this headline">¶</a></h2>
 <p>Shown below is a saturated steam table. A <strong>saturated steam table</strong> will
@@ -808,6 +816,23 @@ df
 </div></div>
 </div>
 </div>
+<div class="section" id="4.6.4-–-Interpolation">
+<h2>4.6.4 – Interpolation<a class="headerlink" href="#4.6.4-–-Interpolation" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s suppose you wanted to find out what the internal energy of steam
+is at <span class="math">\(725.00 ^{\circ} C\)</span> and <span class="math">\(3.0000 \space \text{MPa}\)</span>.
+Since the value is not given in the table, you must interpolate. The
+formula for interpolation is:</p>
+<div class="math">
+\[y = \frac{y_2 - y_1}{x_2 - x_1} (x - x_1) + y_1\]</div>
+<p>In this case the formula for internal energy at
+<span class="math">\(725.00 ^{\circ} C\)</span> is:</p>
+<div class="math">
+\[U_{3 MPa, 725 C} = \frac{U_{3 MPa, 750 C} - U_{3 MPa, 700 C}}{T_2 - T_1} (T - T_1) + U_{3 MPa, 700 C}\]</div>
+<p>and the answer is:</p>
+<div class="math">
+\[U_{3 MPa, 725 C} =  \frac{(3559.9 - 3467.0 ) \space kJ/kg}{(750 - 700) \space C} (725 - 700) \space C + 3467.0 \space kJ/kg = 3513.45 \space kJ/kg\]</div>
+</div>
+<hr class="docutils" />
 <div class="section" id="4.6.5-–-Problem-Statement">
 <h2>4.6.5 – Problem Statement<a class="headerlink" href="#4.6.5-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="Question">
@@ -1283,7 +1308,9 @@ changes in internal energy</p>
   <ul>
 <li><a class="reference internal" href="#">4.6 – Steam Tables</a><ul>
 <li><a class="reference internal" href="#4.6.0-–-Learning-Objectives">4.6.0 – Learning Objectives</a></li>
+<li><a class="reference internal" href="#4.6.1-–-Introduction">4.6.1 – Introduction</a></li>
 <li><a class="reference internal" href="#4.6.2-–-Table-Description">4.6.2 – Table Description</a></li>
+<li><a class="reference internal" href="#4.6.4-–-Interpolation">4.6.4 – Interpolation</a></li>
 <li><a class="reference internal" href="#4.6.5-–-Problem-Statement">4.6.5 – Problem Statement</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
 <li><a class="reference internal" href="#Answer">Answer</a></li>
@@ -1350,34 +1377,6 @@ $(document).ready(function() {
         return false;
     });
 });
-</script>
-
-<!-- Google analytics -->
-
-    <div class="footer">
-      &copy;2017, I2.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="../_sources/Module-4-Separation-II/4.6 - Steam Tables.ipynb.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-106029945-1', 'auto');
-  ga('send', 'pageview');
-
 </script>
 
   </body>
