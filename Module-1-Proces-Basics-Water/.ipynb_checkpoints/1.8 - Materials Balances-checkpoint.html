@@ -244,6 +244,25 @@ equation:</p>
 <p>The units of the general mass balance are in units per time
 <span class="math">\(\frac{unit}{s}\)</span></p>
 </div>
+<hr class="docutils" />
+<div class="section" id="1.8.3-–-Types-of-Balances">
+<h2>1.8.3 – Types of Balances<a class="headerlink" href="#1.8.3-–-Types-of-Balances" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="1.-Differential-Balances">
+<h3>1. Differential Balances<a class="headerlink" href="#1.-Differential-Balances" title="Permalink to this headline">¶</a></h3>
+<p><strong>Differential balances</strong> indicate what is happening in a system at an
+instant of time and are usually used in a continuous process. Each term
+of the balance is a rate and has units of the quantity per unit time
+such as <span class="math">\(\frac{kg}{s}\)</span>. The general mass balance is a differential
+mass balance.</p>
+</div>
+<div class="section" id="2.-Integral-Balances">
+<h3>2. Integral Balances<a class="headerlink" href="#2.-Integral-Balances" title="Permalink to this headline">¶</a></h3>
+<p><strong>Integral balances</strong> describe what is happening in a system between two
+instants of time and are usually used in a batch process. Each term of
+the equation is an amount of the quantity such as <span class="math">\(kg\)</span>.</p>
+</div>
+</div>
+<hr class="docutils" />
 <div class="section" id="1.8.4-–-Balances-on-Continuous-Steady-State-Processes">
 <h2>1.8.4 – Balances on Continuous Steady-State Processes<a class="headerlink" href="#1.8.4-–-Balances-on-Continuous-Steady-State-Processes" title="Permalink to this headline">¶</a></h2>
 <p>In <strong>continuous steady-state processes</strong>, the accumulation term in the
@@ -259,6 +278,23 @@ simplifies to:</p>
 <div class="math">
 \[input = output\]</div>
 </div>
+<hr class="docutils" />
+<div class="section" id="1.8.5-–-Integral-Balances-on-Batch-Processes">
+<h2>1.8.5 – Integral Balances on Batch Processes<a class="headerlink" href="#1.8.5-–-Integral-Balances-on-Batch-Processes" title="Permalink to this headline">¶</a></h2>
+<p>Integral balances on <strong>batch processes</strong> are solved very similarly.
+Since batch processes don&#8217;t have continuous inputs and outputs,
+<span class="math">\(generation = accumulation\)</span>. Furthermore, the accumulation in the
+process between <span class="math">\(t_0\)</span> and <span class="math">\(t_f\)</span> is simply <span class="math">\(n_f - n_0\)</span>.
+Therefore</p>
+<div class="math">
+\[accumulation = final \space output - initial \space input\]</div>
+<div class="math">
+\[accumulation = generation - consumption\]</div>
+<p>Equating these two expressions yields</p>
+<div class="math">
+\[initial \space input + generation = final \space output + consumption\]</div>
+</div>
+<hr class="docutils" />
 <div class="section" id="1.8.6-–-Problem-Statement">
 <h2>1.8.6 – Problem Statement<a class="headerlink" href="#1.8.6-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="Problem-1">
@@ -474,7 +510,13 @@ x3_H20 = 0.4714285714285714
 <li><a class="reference internal" href="#1.8.0-–-Learning-Objectives">1.8.0 – Learning Objectives</a></li>
 <li><a class="reference internal" href="#1.8.1-–-Introduction">1.8.1 – Introduction</a></li>
 <li><a class="reference internal" href="#1.8.2-–-The-Law-of-Conservation-of-Mass">1.8.2 – The Law of Conservation of Mass</a></li>
+<li><a class="reference internal" href="#1.8.3-–-Types-of-Balances">1.8.3 – Types of Balances</a><ul>
+<li><a class="reference internal" href="#1.-Differential-Balances">1. Differential Balances</a></li>
+<li><a class="reference internal" href="#2.-Integral-Balances">2. Integral Balances</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#1.8.4-–-Balances-on-Continuous-Steady-State-Processes">1.8.4 – Balances on Continuous Steady-State Processes</a></li>
+<li><a class="reference internal" href="#1.8.5-–-Integral-Balances-on-Batch-Processes">1.8.5 – Integral Balances on Batch Processes</a></li>
 <li><a class="reference internal" href="#1.8.6-–-Problem-Statement">1.8.6 – Problem Statement</a><ul>
 <li><a class="reference internal" href="#Problem-1">Problem 1</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>

@@ -217,6 +217,17 @@ div.nboutput div.output_area.stderr {
 <li>Solve a problem using heat of formation method.</li>
 </ol>
 </div>
+<hr class="docutils" />
+<div class="section" id="6.5.1-–-Introduction">
+<h2>6.5.1 – Introduction<a class="headerlink" href="#6.5.1-–-Introduction" title="Permalink to this headline">¶</a></h2>
+<p>There are two common methods to solving energy balances. The first is
+<strong>heat of reaction method</strong>. This method is generally preferred for a
+single reaction sys where <span class="math">\(\Delta H_r\)</span> is known. The second method
+is <strong>heat of formation method</strong>. This method is generally preferred for
+multiple reactions and systems where <span class="math">\(\Delta H_r\)</span> is not readily
+available.</p>
+</div>
+<hr class="docutils" />
 <div class="section" id="6.5.2-–-Heat-of-Reaction-Method">
 <h2>6.5.2 – Heat of Reaction Method<a class="headerlink" href="#6.5.2-–-Heat-of-Reaction-Method" title="Permalink to this headline">¶</a></h2>
 <p>There are seven steps to solving an energy balance using the <strong>heat of
@@ -266,98 +277,358 @@ compound involved in the reaction):</p>
 <span class="math">\(C_3 H_8 \small{\text{(g)}}\)</span>, <span class="math">\(O_2 \small{\text{(g)}}\)</span>,
 <span class="math">\(C O_2 \small{\text{(g)}}\)</span>, <span class="math">\(H_2 O \small{\text{(l)}}\)</span>, and
 <span class="math">\(N_2 \small{\text{(g)}}\)</span></p>
-<table style="width:70%" align="center"><div class="highlight-default"><div class="highlight"><pre><span></span>&lt;tr&gt;
-    &lt;th&gt; Substance &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{in} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{in} \space (kJ/mol)$ &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{out} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{out} \space (kJ/mol)$ &lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C_3 H_8$ &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $O_2$ &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $N_2$ &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C O_2$ &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $H_2 O$ &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-</pre></div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Sub
+sta
+nce</th>
+<th class="head">:ma
+th:
+<cite>d
+ot{
+n}_
+{in
+} spa
+ce
+(mo
+l/s
+)</cite></th>
+<th class="head">:ma
+th:
+<cite>h
+at{
+H}_
+{in
+} spa
+ce
+(kJ
+/mo
+l)</cite></th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id1"><span class="problematic" id="id2">`</span></a>d
+ot{
+n}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(m</div></blockquote>
+<p class="last">ol/
+s)`</p>
+</th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id3"><span class="problematic" id="id4">`</span></a>h
+at{
+H}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(k</div></blockquote>
+<p class="last">J/m
+ol)
+`</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>:ma
+th:
+<cite>C_
+3 H
+_8</cite></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<cite>O_
+2</cite></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<cite>N_
+2</cite></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<a href="#id5"><span class="problematic" id="id6">`</span></a>C
+O_2
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<a href="#id7"><span class="problematic" id="id8">`</span></a><a href="#id81"><span class="problematic" id="id82">H_</span></a>
+2 O
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
-</table></div>
 <div class="section" id="5.-Calculate-Enthalpies:">
 <h3>5. Calculate Enthalpies:<a class="headerlink" href="#5.-Calculate-Enthalpies:" title="Permalink to this headline">¶</a></h3>
-<table style="width:70%" align="center"><div class="highlight-default"><div class="highlight"><pre><span></span>&lt;tr&gt;
-    &lt;th&gt; Substance &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{in} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{in} \space (kJ/mol)$ &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{out} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{out} \space (kJ/mol)$ &lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C_3 H_8$ &lt;/td&gt;
-    &lt;td&gt;100&lt;/td&gt;
-    &lt;td&gt;0&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $O_2$ &lt;/td&gt;
-    &lt;td&gt;600&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{2}$&lt;/td&gt;
-    &lt;td&gt;100&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{4}$&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $N_2$ &lt;/td&gt;
-    &lt;td&gt;2256&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{3}$&lt;/td&gt;
-    &lt;td&gt;2256&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{5}$&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C O_2$ &lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;300&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{6}$&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $H_2 O$ &lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;400&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{7}$&lt;/td&gt;
-&lt;/tr&gt;
-</pre></div>
-</div>
-</table><div class="math">
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Sub
+sta
+nce</th>
+<th class="head">:ma
+th:
+<cite>d
+ot{
+n}_
+{in
+} spa
+ce
+(mo
+l/s
+)</cite></th>
+<th class="head">:ma
+th:
+<cite>h
+at{
+H}_
+{in
+} spa
+ce
+(kJ
+/mo
+l)</cite></th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id9"><span class="problematic" id="id10">`</span></a>d
+ot{
+n}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(m</div></blockquote>
+<p class="last">ol/
+s)`</p>
+</th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id11"><span class="problematic" id="id12">`</span></a>h
+at{
+H}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(k</div></blockquote>
+<p class="last">J/m
+ol)
+`</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>:ma
+th:
+<cite>C_
+3 H
+_8</cite></td>
+<td>100</td>
+<td>0</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<cite>O_
+2</cite></td>
+<td>600</td>
+<td>:ma
+th:
+<a href="#id13"><span class="problematic" id="id14">`</span></a>h
+at{
+H}_
+{2}
+`</td>
+<td>100</td>
+<td>:ma
+th:
+<a href="#id15"><span class="problematic" id="id16">`</span></a>h
+at{
+H}_
+{4}
+`</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<cite>N_
+2</cite></td>
+<td>225
+6</td>
+<td>:ma
+th:
+<a href="#id17"><span class="problematic" id="id18">`</span></a>h
+at{
+H}_
+{3}
+`</td>
+<td>225
+6</td>
+<td>:ma
+th:
+<a href="#id19"><span class="problematic" id="id20">`</span></a>h
+at{
+H}_
+{5}
+`</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<a href="#id21"><span class="problematic" id="id22">`</span></a>C
+O_2
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>300</td>
+<td>:ma
+th:
+<a href="#id23"><span class="problematic" id="id24">`</span></a>h
+at{
+H}_
+{6}
+`</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<a href="#id25"><span class="problematic" id="id26">`</span></a><a href="#id83"><span class="problematic" id="id84">H_</span></a>
+2 O
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>400</td>
+<td>:ma
+th:
+<a href="#id27"><span class="problematic" id="id28">`</span></a>h
+at{
+H}_
+{7}
+`</td>
+</tr>
+</tbody>
+</table>
+<div class="math">
 \[\]</div>
 <p><span class="math">\(\hat{H}_2 = \Delta \hat{H} \text{ for } O_2 \text{ from } 25 ^{\circ} C \text{ to } 300 ^{\circ} C = (8.47 - 0) \space kJ/mol = 8.47 \space kJ/mol\)</span></p>
 <p><span class="math">\(\hat{H}_3 = \Delta \hat{H} \text{ for } N_2 \text{ from } 25 ^{\circ} C \text{ to } 300 ^{\circ} C = (8.12 - 0) \space kJ/mol = 8.12 \space kJ/mol\)</span></p>
@@ -368,51 +639,149 @@ compound involved in the reaction):</p>
 <p><span class="math">\(\hat{H}_7 = \int_{25 ^{\circ} C}^{100 ^{\circ} C} C_{pl} dT + \Delta \hat{H}_v (100 ^{\circ} C) + \int_{100 ^{\circ} C}^{1000 ^{\circ} C} C_{pv} dT = 81.46 kJ/mol\)</span></p>
 <div class="math">
 \[\]</div>
-<table style="width:70%" align="center"><div class="highlight-default"><div class="highlight"><pre><span></span>&lt;tr&gt;
-    &lt;th&gt; Substance &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{in} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{in} \space (kJ/mol)$ &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{out} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{out} \space (kJ/mol)$ &lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C_3 H_8$ &lt;/td&gt;
-    &lt;td&gt;100&lt;/td&gt;
-    &lt;td&gt;0&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $O_2$ &lt;/td&gt;
-    &lt;td&gt;600&lt;/td&gt;
-    &lt;td&gt;8.47&lt;/td&gt;
-    &lt;td&gt;100&lt;/td&gt;
-    &lt;td&gt;32.47&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $N_2$ &lt;/td&gt;
-    &lt;td&gt;2256&lt;/td&gt;
-    &lt;td&gt;8.12&lt;/td&gt;
-    &lt;td&gt;2256&lt;/td&gt;
-    &lt;td&gt;30.56&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C O_2$ &lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;300&lt;/td&gt;
-    &lt;td&gt;48.60&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $H_2 O$ &lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;400&lt;/td&gt;
-    &lt;td&gt;81.46&lt;/td&gt;
-&lt;/tr&gt;
-</pre></div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Sub
+sta
+nce</th>
+<th class="head">:ma
+th:
+<cite>d
+ot{
+n}_
+{in
+} spa
+ce
+(mo
+l/s
+)</cite></th>
+<th class="head">:ma
+th:
+<cite>h
+at{
+H}_
+{in
+} spa
+ce
+(kJ
+/mo
+l)</cite></th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id29"><span class="problematic" id="id30">`</span></a>d
+ot{
+n}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(m</div></blockquote>
+<p class="last">ol/
+s)`</p>
+</th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id31"><span class="problematic" id="id32">`</span></a>h
+at{
+H}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(k</div></blockquote>
+<p class="last">J/m
+ol)
+`</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>:ma
+th:
+<cite>C_
+3 H
+_8</cite></td>
+<td>100</td>
+<td>0</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<cite>O_
+2</cite></td>
+<td>600</td>
+<td>8.4
+7</td>
+<td>100</td>
+<td>32.
+47</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<cite>N_
+2</cite></td>
+<td>225
+6</td>
+<td>8.1
+2</td>
+<td>225
+6</td>
+<td>30.
+56</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<a href="#id33"><span class="problematic" id="id34">`</span></a>C
+O_2
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>300</td>
+<td>48.
+60</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<a href="#id35"><span class="problematic" id="id36">`</span></a><a href="#id85"><span class="problematic" id="id86">H_</span></a>
+2 O
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>400</td>
+<td>81.
+46</td>
+</tr>
+</tbody>
+</table>
 </div>
-</table></div>
 <div class="section" id="6.-Calculate--for-the-reactor:">
 <h3>6. Calculate <span class="math">\(\Delta \dot{H}\)</span> for the reactor:<a class="headerlink" href="#6.-Calculate--for-the-reactor:" title="Permalink to this headline">¶</a></h3>
 <div class="math">
@@ -473,98 +842,364 @@ because we have an enthalpy table.</p>
 <p>Reference states: <span class="math">\(25 ^{\circ} C\)</span> and <span class="math">\(1\)</span> atm for
 <span class="math">\(C \small{\text{(s)}}\)</span>, <span class="math">\(O_2 \small{\text{(g)}}\)</span>,
 <span class="math">\(H_2 \small{\text{(g)}}\)</span>, and <span class="math">\(N_2 \small{\text{(g)}}\)</span></p>
-<table style="width:70%" align="center"><div class="highlight-default"><div class="highlight"><pre><span></span>&lt;tr&gt;
-    &lt;th&gt; Substance &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{in} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{in} \space (kJ/mol)$ &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{out} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{out} \space (kJ/mol)$ &lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C_3 H_8$ &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $O_2$ &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $N_2$ &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C O_2$ &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $H_2 O$ &lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-</pre></div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Sub
+sta
+nce</th>
+<th class="head">:ma
+th:
+<cite>d
+ot{
+n}_
+{in
+} spa
+ce
+(mo
+l/s
+)</cite></th>
+<th class="head">:ma
+th:
+<cite>h
+at{
+H}_
+{in
+} spa
+ce
+(kJ
+/mo
+l)</cite></th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id40"><span class="problematic" id="id41">`</span></a>d
+ot{
+n}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(m</div></blockquote>
+<p class="last">ol/
+s)`</p>
+</th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id42"><span class="problematic" id="id43">`</span></a>h
+at{
+H}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(k</div></blockquote>
+<p class="last">J/m
+ol)
+`</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>:ma
+th:
+<cite>C_
+3 H
+_8</cite></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<cite>O_
+2</cite></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<cite>N_
+2</cite></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<a href="#id44"><span class="problematic" id="id45">`</span></a>C
+O_2
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<a href="#id46"><span class="problematic" id="id47">`</span></a><a href="#id87"><span class="problematic" id="id88">H_</span></a>
+2 O
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
-</table></div>
 <div class="section" id="4.-Calculate-Enthalpies:">
 <h3>4. Calculate Enthalpies:<a class="headerlink" href="#4.-Calculate-Enthalpies:" title="Permalink to this headline">¶</a></h3>
-<table style="width:70%" align="center"><div class="highlight-default"><div class="highlight"><pre><span></span>&lt;tr&gt;
-    &lt;th&gt; Substance &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{in} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{in} \space (kJ/mol)$ &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{out} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{out} \space (kJ/mol)$ &lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C_3 H_8$ &lt;/td&gt;
-    &lt;td&gt;100&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{1}$&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $O_2$ &lt;/td&gt;
-    &lt;td&gt;600&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{2}$&lt;/td&gt;
-    &lt;td&gt;100&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{4}$&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $N_2$ &lt;/td&gt;
-    &lt;td&gt;2256&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{3}$&lt;/td&gt;
-    &lt;td&gt;2256&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{5}$&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C O_2$ &lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;300&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{6}$&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $H_2 O$ &lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;400&lt;/td&gt;
-    &lt;td&gt;$\hat{H}_{7}$&lt;/td&gt;
-&lt;/tr&gt;
-</pre></div>
-</div>
-</table><div class="math">
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Sub
+sta
+nce</th>
+<th class="head">:ma
+th:
+<cite>d
+ot{
+n}_
+{in
+} spa
+ce
+(mo
+l/s
+)</cite></th>
+<th class="head">:ma
+th:
+<cite>h
+at{
+H}_
+{in
+} spa
+ce
+(kJ
+/mo
+l)</cite></th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id49"><span class="problematic" id="id50">`</span></a>d
+ot{
+n}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(m</div></blockquote>
+<p class="last">ol/
+s)`</p>
+</th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id51"><span class="problematic" id="id52">`</span></a>h
+at{
+H}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(k</div></blockquote>
+<p class="last">J/m
+ol)
+`</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>:ma
+th:
+<cite>C_
+3 H
+_8</cite></td>
+<td>100</td>
+<td>:ma
+th:
+<a href="#id53"><span class="problematic" id="id54">`</span></a>h
+at{
+H}_
+{1}
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<cite>O_
+2</cite></td>
+<td>600</td>
+<td>:ma
+th:
+<a href="#id55"><span class="problematic" id="id56">`</span></a>h
+at{
+H}_
+{2}
+`</td>
+<td>100</td>
+<td>:ma
+th:
+<a href="#id57"><span class="problematic" id="id58">`</span></a>h
+at{
+H}_
+{4}
+`</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<cite>N_
+2</cite></td>
+<td>225
+6</td>
+<td>:ma
+th:
+<a href="#id59"><span class="problematic" id="id60">`</span></a>h
+at{
+H}_
+{3}
+`</td>
+<td>225
+6</td>
+<td>:ma
+th:
+<a href="#id61"><span class="problematic" id="id62">`</span></a>h
+at{
+H}_
+{5}
+`</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<a href="#id63"><span class="problematic" id="id64">`</span></a>C
+O_2
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>300</td>
+<td>:ma
+th:
+<a href="#id65"><span class="problematic" id="id66">`</span></a>h
+at{
+H}_
+{6}
+`</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<a href="#id67"><span class="problematic" id="id68">`</span></a><a href="#id89"><span class="problematic" id="id90">H_</span></a>
+2 O
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>400</td>
+<td>:ma
+th:
+<a href="#id69"><span class="problematic" id="id70">`</span></a>h
+at{
+H}_
+{7}
+`</td>
+</tr>
+</tbody>
+</table>
+<div class="math">
 \[\]</div>
 <p><span class="math">\(\hat{H}_1 = \Delta \hat{H}_{f, \space C_3 H_8 \small{\text{(g)}}} ^{\circ} = -103.8 \space kJ/mol\)</span></p>
 <p><span class="math">\(\hat{H}_2 = \Delta \hat{H} \text{ for } O_2 \text{ from } 25 ^{\circ} C \text{ to } 300 ^{\circ} C = (8.47 - 0) \space kJ/mol = 8.47 \space kJ/mol\)</span></p>
@@ -575,51 +1210,150 @@ because we have an enthalpy table.</p>
 <p><span class="math">\(\hat{H}_7 = \Delta \hat{H}_{f, \space H_2 O \small{\text{(v)}}} ^{\circ} + \int_{25 ^{\circ} C}^{1000 ^{\circ} C} C_{p, \space H_2 O \small{\text{(v)}}} dT = -204.1 \space kJ/mol\)</span></p>
 <div class="math">
 \[\]</div>
-<table style="width:70%" align="center"><div class="highlight-default"><div class="highlight"><pre><span></span>&lt;tr&gt;
-    &lt;th&gt; Substance &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{in} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{in} \space (kJ/mol)$ &lt;/th&gt;
-    &lt;th&gt; $\dot{n}_{out} \space (mol/s)$ &lt;/th&gt;
-    &lt;th&gt; $\hat{H}_{out} \space (kJ/mol)$ &lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C_3 H_8$ &lt;/td&gt;
-    &lt;td&gt;100&lt;/td&gt;
-    &lt;td&gt;-103.8&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $O_2$ &lt;/td&gt;
-    &lt;td&gt;600&lt;/td&gt;
-    &lt;td&gt;8.47&lt;/td&gt;
-    &lt;td&gt;100&lt;/td&gt;
-    &lt;td&gt;32.47&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $N_2$ &lt;/td&gt;
-    &lt;td&gt;2256&lt;/td&gt;
-    &lt;td&gt;8.12&lt;/td&gt;
-    &lt;td&gt;2256&lt;/td&gt;
-    &lt;td&gt;30.56&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $C O_2$ &lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;300&lt;/td&gt;
-    &lt;td&gt;-344.9&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt; $H_2 O$ &lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;400&lt;/td&gt;
-    &lt;td&gt;-204.1&lt;/td&gt;
-&lt;/tr&gt;
-</pre></div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Sub
+sta
+nce</th>
+<th class="head">:ma
+th:
+<cite>d
+ot{
+n}_
+{in
+} spa
+ce
+(mo
+l/s
+)</cite></th>
+<th class="head">:ma
+th:
+<cite>h
+at{
+H}_
+{in
+} spa
+ce
+(kJ
+/mo
+l)</cite></th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id71"><span class="problematic" id="id72">`</span></a>d
+ot{
+n}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(m</div></blockquote>
+<p class="last">ol/
+s)`</p>
+</th>
+<th class="head"><p class="first">:ma
+th:
+<a href="#id73"><span class="problematic" id="id74">`</span></a>h
+at{
+H}_
+{ou
+t}
+sp
+ace</p>
+<blockquote>
+<div>(k</div></blockquote>
+<p class="last">J/m
+ol)
+`</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>:ma
+th:
+<cite>C_
+3 H
+_8</cite></td>
+<td>100</td>
+<td>-10
+3.8</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<cite>O_
+2</cite></td>
+<td>600</td>
+<td>8.4
+7</td>
+<td>100</td>
+<td>32.
+47</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<cite>N_
+2</cite></td>
+<td>225
+6</td>
+<td>8.1
+2</td>
+<td>225
+6</td>
+<td>30.
+56</td>
+</tr>
+<tr class="row-odd"><td>:ma
+th:
+<a href="#id75"><span class="problematic" id="id76">`</span></a>C
+O_2
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>300</td>
+<td>-34
+4.9</td>
+</tr>
+<tr class="row-even"><td>:ma
+th:
+<a href="#id77"><span class="problematic" id="id78">`</span></a><a href="#id91"><span class="problematic" id="id92">H_</span></a>
+2 O
+`</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+<td>400</td>
+<td>-20
+4.1</td>
+</tr>
+</tbody>
+</table>
 </div>
-</table></div>
 <div class="section" id="5.-Calculate--for-the-reactor:">
 <h3>5. Calculate <span class="math">\(\Delta \dot{H}\)</span> for the reactor:<a class="headerlink" href="#5.-Calculate--for-the-reactor:" title="Permalink to this headline">¶</a></h3>
 <div class="math">
@@ -659,6 +1393,7 @@ because we have an enthalpy table.</p>
   <ul>
 <li><a class="reference internal" href="#">6.5 – Heat of Reaction and Formation Methods</a><ul>
 <li><a class="reference internal" href="#6.5.0-–-Learning-Objectives">6.5.0 – Learning Objectives</a></li>
+<li><a class="reference internal" href="#6.5.1-–-Introduction">6.5.1 – Introduction</a></li>
 <li><a class="reference internal" href="#6.5.2-–-Heat-of-Reaction-Method">6.5.2 – Heat of Reaction Method</a><ul>
 <li><a class="reference internal" href="#1.-Solve-the-material-balances-as-much-as-possible:">1. Solve the material balances as much as possible:</a></li>
 <li><a class="reference internal" href="#2.-Choose-reference-states-for-energy-calculations:">2. Choose reference states for energy calculations:</a></li>

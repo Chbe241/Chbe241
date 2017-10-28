@@ -215,6 +215,7 @@ div.nboutput div.output_area.stderr {
 <li>Perform a degree of freedom analysis.</li>
 </ol>
 </div>
+<hr class="docutils" />
 <div class="section" id="1.5.1-–-Introduction">
 <h2>1.5.1 – Introduction<a class="headerlink" href="#1.5.1-–-Introduction" title="Permalink to this headline">¶</a></h2>
 <p>Anyone who has done material balances knows how frustrating it is to be
@@ -229,6 +230,29 @@ the reason why a <strong>degree-of-freedom</strong> (DOF) analysis is very power
 number of unknown variables and the number of equations relating those
 variables.</p>
 </div>
+<hr class="docutils" />
+<div class="section" id="1.5.3-–-Performing-a-DOF-Analysis">
+<h2>1.5.3 – Performing a DOF Analysis<a class="headerlink" href="#1.5.3-–-Performing-a-DOF-Analysis" title="Permalink to this headline">¶</a></h2>
+<p>To perform a DOF analysis, we need to first draw and completely label a
+block flow diagram (BFD). Next, we need to count the unknown variables
+on the BFD. After this, we need to count the independent equations
+relating them. Finally, we subtract the number of equations from the
+number of unknown variables. The result is the DOF of the process,
+<span class="math">\(n_{df}\)</span>. From this calculation, there are three possibilities:</p>
+<ol class="arabic simple">
+<li>If <span class="math">\(n_{df} = 0\)</span> then there is the same number of unknown
+variables and equating equations and the problem can be solved.</li>
+<li>If <span class="math">\(n_{df} &gt; 0\)</span> then there are more unknown variables than
+equating equations and the system cannot be solved yet. When this
+inequality happens, we say the question is underspecified and has
+infinitely many solutions.</li>
+<li>If <span class="math">\(n_{df} &lt; 0\)</span> then there are less unknown variables than
+equating equations. This inequality means that either the BFD was
+incorrectly labeled or the problem was over specified with useless
+information. Still, the problem can be solved.</li>
+</ol>
+</div>
+<hr class="docutils" />
 <div class="section" id="1.5.4-–-Problem-Statement">
 <h2>1.5.4 – Problem Statement<a class="headerlink" href="#1.5.4-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="Problem-1">
@@ -337,6 +361,7 @@ every part of the system is solvable.</p>
 <li><a class="reference internal" href="#1.5.0-–-Learning-Objectives">1.5.0 – Learning Objectives</a></li>
 <li><a class="reference internal" href="#1.5.1-–-Introduction">1.5.1 – Introduction</a></li>
 <li><a class="reference internal" href="#1.5.2-–-Definition">1.5.2 – Definition</a></li>
+<li><a class="reference internal" href="#1.5.3-–-Performing-a-DOF-Analysis">1.5.3 – Performing a DOF Analysis</a></li>
 <li><a class="reference internal" href="#1.5.4-–-Problem-Statement">1.5.4 – Problem Statement</a><ul>
 <li><a class="reference internal" href="#Problem-1">Problem 1</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
