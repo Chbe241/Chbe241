@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>5.4 – Thermodynamic Terms &#8212; project1 1.0 documentation</title>
+    <title>4.10 – Practice Problem 1 &#8212; project1 1.0 documentation</title>
     
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -204,51 +204,99 @@ div.nboutput div.output_area.stderr {
 
 .ansi-bold { font-weight: bold; }
 </style>
-<div class="section" id="5.4-–-Thermodynamic-Terms">
-<h1>5.4 – Thermodynamic Terms<a class="headerlink" href="#5.4-–-Thermodynamic-Terms" title="Permalink to this headline">¶</a></h1>
-<hr class="docutils" />
-<div class="section" id="5.4.0-–-Learning-Objectives">
-<h2>5.4.0 – Learning Objectives<a class="headerlink" href="#5.4.0-–-Learning-Objectives" title="Permalink to this headline">¶</a></h2>
-<p>By the end of this section you should be able to:</p>
+<div class="section" id="4.10-–-Practice-Problem-1">
+<h1>4.10 – Practice Problem 1<a class="headerlink" href="#4.10-–-Practice-Problem-1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Question">
+<h2>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h2>
+<p>A vessel contains a mixture of benzene, <span class="math">\(C_6 H_6\)</span>, and toluene,
+<span class="math">\(C_7 H_8\)</span>. At 373K the pressure in the vessel is 1.53 bar(abs).
+Using the data provioded, and any others necessary, find the mass
+fractions of benzene in the liquid and vapour. Assume the liquids and
+vapours behave ideally. Recall the formula for Antoines equation:
+<span class="math">\(\log_{10} p^* = A - \frac{B}{T + C}\)</span>. Where T is in kelvin for
+this question.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="19%" />
+<col width="21%" />
+<col width="37%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Component</th>
+<th class="head">Are</th>
+<th class="head">Cool</th>
+<th class="head">Antoine Constants</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#160;</td>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+</tr>
+<tr class="row-odd"><td>Benzene</td>
+<td>4.72583</td>
+<td>1660.652</td>
+<td>-1.461</td>
+</tr>
+<tr class="row-even"><td>Toluene</td>
+<td>4.07827</td>
+<td>1343.943</td>
+<td>-53.773</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Answer">
+<h2>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h2>
+<p>From antoines equation, we can find the vapour partial pressure of
+toluene and benze.</p>
+<div class="math">
+\[p^*_b = 10^{\space A - \frac{B}{T + C}} = 10^{\space 4.72583 - \frac{1660.652}{373 - 1.461}} = 1.8037 \space \text{bar}\]</div>
+<div class="math">
+\[p^*_t = 10^{\space A - \frac{B}{T + C}} = 10^{\space 4.07827 - \frac{1343.943}{373 - 53.773}} = 0.7384 \space \text{bar}\]</div>
+<p>Now we can solve for the liquid mole fractions of the two substances
+with two equations and two unknowns using Raoult&#8217;s law and the fact that
+the mole fractions must add to one:</p>
 <ol class="arabic simple">
-<li>Understand some of the jargon employed in thermodynamics</li>
+<li><span class="math">\(x_b + x_t = 1\)</span></li>
+<li><span class="math">\(P = x_b \cdot p^*_b + x_t \cdot p^*_t\)</span></li>
 </ol>
-</div>
-<hr class="docutils" />
-<div class="section" id="5.4.1-–-Introduction">
-<h2>5.4.1 – Introduction<a class="headerlink" href="#5.4.1-–-Introduction" title="Permalink to this headline">¶</a></h2>
-<p>Thermodynamics has a lot of jargon to explain the phenomena that occur.
-This notebook will go over the term that you will encounter in many
-problems such as Isothermal, Adiabatic, Isochoric, as well as open and
-closed systems.</p>
-</div>
-<hr class="docutils" />
-<div class="section" id="5.4.2-–-Glossary">
-<h2>5.4.2 – Glossary<a class="headerlink" href="#5.4.2-–-Glossary" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><strong>Isothermal:</strong> Constant temperature <span class="math">\(\Delta T = 0\)</span>. A process
-undergoing isothermal expansion is undergoing expansion at <strong>constant
-temperature</strong></li>
-<li><strong>Adiabatic:</strong> No heat is added or removed from the system;
-<span class="math">\(Q = 0\)</span>. This can be described as <strong>perfectly insulated</strong></li>
-<li><strong>Isochoric/Isovolumetric:</strong> Constant volume.</li>
-<li><strong>Isobaric:</strong> Constant Pressure.</li>
-<li><strong>Open system:</strong> A system in which mass/matter is <strong>not conserved</strong>.</li>
-<li><strong>Closed system:</strong> A system in which mass/matter is <strong>conserved</strong>.</li>
-<li><strong>Isolated system:</strong> A system in which matter/mass and energy are
-<strong>conserved</strong>. &#8216;</li>
-<li><strong>Specific property:</strong> A property that is divided by mass.</li>
-</ul>
-<div class="section" id="check-yourself:">
-<h3>check yourself:<a class="headerlink" href="#check-yourself:" title="Permalink to this headline">¶</a></h3>
-<p>Is a homebrew an open/closed system?</p>
-</div>
-<div class="section" id="Answer:">
-<h3>Answer:<a class="headerlink" href="#Answer:" title="Permalink to this headline">¶</a></h3>
-<p>It depends. Ideally you want a <strong>closed</strong> system to allow for a good
-fermentation of the brew. To prevent the fermenter from blowing up an
-airlock is added which allows air to escape but not re-enter making it
-an <strong>open</strong> system.</p>
+<div class="math">
+\[x_t = 1 - x_b\]</div>
+<div class="math">
+\[P = x_b \cdot p^*_b + (1 - x_b)\cdot p^*_t\]</div>
+<div class="math">
+\[1.53 \space \text{bar} = x_b \cdot (1.8037 \space \text{bar}) + (1 - x_b)\cdot (0.7384 \space \text{bar})\]</div>
+<div class="math">
+\[x_b = 0.743\]</div>
+<div class="math">
+\[\therefore \space x_t = 0.257\]</div>
+<p>Next we can solve for the vapour mole fractions using Raoult&#8217;s law:</p>
+<div class="math">
+\[y_b = \frac{x_b \cdot p^*_b}{P} = \frac{1.340}{1.53} = 0.876\]</div>
+<div class="math">
+\[y_t = 1 - y_b = 0.124\]</div>
+<p>Finally we can solve for the mass fractions using the molecular weight
+of the benzne and toluene and a basis of 1 mole:</p>
+<div class="math">
+\[MW_b = 78.11 \space \frac{g}{mol}\]</div>
+<div class="math">
+\[MW_t = 92.14 \space \frac{g}{mol}\]</div>
+<div class="math">
+\[m_b = x_b \times MW_b = 0.743 \space mol \times 78.11 \space \frac{g}{mol} = 58.03 \space g\]</div>
+<div class="math">
+\[m_t = x_t \times MW_t = 0.257 \space mol \times 92.14 \space \frac{g}{mol} = 23.68 \space g\]</div>
+<div class="math">
+\[\therefore \space w_b = \frac{m_b}{m_b + m_t} = \frac{58.03}{58.03 + 23.68} = 0.710\]</div>
+<p>and we will do the same for the vapour mass fractions:</p>
+<div class="math">
+\[m_b = y_b \times MW_b = 0.876 \space mol \times 78.11 \space \frac{g}{mol} = 68.42 \space g\]</div>
+<div class="math">
+\[m_t = y_t \times MW_t = 0.124 \space mol \times 92.14 \space \frac{g}{mol} = 11.43 \space g\]</div>
+<div class="math">
+\[\therefore \space w_b = \frac{m_b}{m_b + m_t} = \frac{68.42}{68.42 + 11.43} = 0.857\]</div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none"><div class="highlight"><pre>
 <span></span>In [ ]:
@@ -257,7 +305,6 @@ an <strong>open</strong> system.</p>
 <div class="input_area highlight-ipython3"><div class="highlight"><pre>
 <span></span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -271,14 +318,9 @@ an <strong>open</strong> system.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">5.4 – Thermodynamic Terms</a><ul>
-<li><a class="reference internal" href="#5.4.0-–-Learning-Objectives">5.4.0 – Learning Objectives</a></li>
-<li><a class="reference internal" href="#5.4.1-–-Introduction">5.4.1 – Introduction</a></li>
-<li><a class="reference internal" href="#5.4.2-–-Glossary">5.4.2 – Glossary</a><ul>
-<li><a class="reference internal" href="#check-yourself:">check yourself:</a></li>
-<li><a class="reference internal" href="#Answer:">Answer:</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">4.10 – Practice Problem 1</a><ul>
+<li><a class="reference internal" href="#Question">Question</a></li>
+<li><a class="reference internal" href="#Answer">Answer</a></li>
 </ul>
 </li>
 </ul>
@@ -292,7 +334,7 @@ an <strong>open</strong> system.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/Module-5-Energy-Balances/.ipynb_checkpoints/5.4 - Review of Terms-checkpoint.ipynb.txt"
+      <li><a href="../../_sources/Module-4-Separation-II/.ipynb_checkpoints/4.10 - Practice Problem 1-checkpoint.ipynb.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -321,7 +363,7 @@ an <strong>open</strong> system.</p>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
       
       |
-      <a href="../../_sources/Module-5-Energy-Balances/.ipynb_checkpoints/5.4 - Review of Terms-checkpoint.ipynb.txt"
+      <a href="../../_sources/Module-4-Separation-II/.ipynb_checkpoints/4.10 - Practice Problem 1-checkpoint.ipynb.txt"
           rel="nofollow">Page source</a>
     </div>
 
